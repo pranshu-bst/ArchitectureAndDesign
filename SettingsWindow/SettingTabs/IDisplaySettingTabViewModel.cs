@@ -15,8 +15,8 @@ namespace SettingsWindow
 	public interface IDisplaySettingTabViewModel : IDynamicViewModel
 	{
 		public DisplayOrientation DisplayOrientation { get; set; }
-		public IDisplayResolutionViewModel SelectedDisplayResolutionViewModel { get; set; }
-		ObservableCollection<IDisplayResolutionViewModel> DisplayResolutionViewModels { get; set; }
+		public IDisplayResolutionViewModel SelectedDisplayResolution { get; set; }
+		ObservableCollection<IDisplayResolutionViewModel> DisplayResolutions { get; set; }
 		public PixelDensity PixelDensity { get; set; }
 	}
 }

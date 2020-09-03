@@ -4,18 +4,18 @@ using Common;
 
 namespace SettingsWindow
 {
-	public interface IShortcut: IViewModel
+	public interface IShortcutViewModel: IViewModel
 	{
 		public string ActionName { get; set; }
 		public string ActionKey { get; set; }
 	}
-	public interface ICategoryShortcuts : IViewModel 
+	public interface ICategoryShortcutsViewModel : IViewModel 
 	{
 		public string Category { get; set; }
-		public ObservableCollection<IShortcut> Shortcuts { get; set; }
+		public ObservableCollection<IShortcutViewModel> Shortcuts { get; set; }
 	}
 	public interface IShortcutKeysSettingTabViewModel : IDynamicViewModel
 	{
-		public ObservableCollection<ICategoryShortcuts> CategoryShortcuts { get; set; }
+		public ObservableCollection<ICategoryShortcutsViewModel> CategoryShortcuts { get; set; }
 	}
 }

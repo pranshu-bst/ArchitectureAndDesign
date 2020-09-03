@@ -5,7 +5,7 @@ using Common;
 
 namespace SettingsWindow
 {
-	public interface IGameSetting : IDynamicViewModel 
+	public interface IGameSettingViewModel : IDynamicViewModel 
 	{
 		public InGameResolution InGameResolution { get; set; }
 		public GraphicQuality GraphicQuality { get; set; }
@@ -21,6 +21,6 @@ namespace SettingsWindow
 
 		public  ICommand ShowGuide { get; set; }
 
-		public IGameSetting GameSeting { get; set; }
+		public IGameSettingViewModel GameSeting { get; set; }
 	}
 }

@@ -5,7 +5,6 @@ using Common;
 
 namespace SettingsWindow
 {
-
 	public interface IAppNotificationViewModel : IViewModel, IAmDirty
 	{
 		public string Game { get; set; }
@@ -15,15 +14,15 @@ namespace SettingsWindow
 
 	public interface INotificationsSettingTabViewModel : IDynamicViewModel
 	{
-		public bool NotificatioMode { get; set; }
+		public bool EnableNotificatioMode { get; set; }
 		public bool DoNotShowNotificationModePopup { get; set; }
 		public ICommand NotificationModeReadMore { get; set; }
 
 
-		public bool NotifcationSounds { get; set; }
-		public bool RibbonNotificaions { get; set; }
-		public bool ToatNotifcation { get; set; }
+		public bool EnableNotifcationSounds { get; set; }
+		public bool EnableRibbonNotificaions { get; set; }
+		public bool EnableToastNotifcation { get; set; }
 
-		ObservableCollection<IAppNotificationViewModel> AppNotificationViewModels { get; set; }
+		ObservableCollection<IAppNotificationViewModel> AppNotifications { get; set; }
 	}
 }
