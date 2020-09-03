@@ -20,5 +20,7 @@ namespace SettingsWindow
 		public bool ForceNativeGamepadWhenSupported { get; set; }
 
 		public  ICommand ShowGuide { get; set; }
+
+		public IGameSetting GameSeting { get; set; }
 	}
 }
