@@ -1,15 +1,14 @@
 ﻿using System;
-using System.ComponentModel;
+
+using Common;
 
 namespace SettingsWindow
 {
-	public class DebuggingPreferencesSettingTabViewModel : IDebuggingPreferencesSettingTabViewModel
+	public class DebuggingPreferencesSettingTabViewModel :ViewModel, IDebuggingPreferencesSettingTabViewModel
 	{
 		public bool EnableAndroidDebugBridge { get; set; }
 		public bool EnableInputDebugging { get; set; }
 		public bool IsDirty { get; set; }
-
-		public event PropertyChangedEventHandler PropertyChanged;
 
 		public bool AreMyChildsDirty()
 		{

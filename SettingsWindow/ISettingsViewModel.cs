@@ -24,9 +24,5 @@ namespace SettingsWindow
 		public ICommand	Reset { get; set; }
 		public ICommand Save { get; set; }
 		public ICommand Close { get; set; }
-
-		void OnInit();
-		void OnDiscard();
-		void OnSave();
 	}
 }
