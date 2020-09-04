@@ -13,7 +13,7 @@ namespace SettingsWindow
 		public bool ForcePortraitMode { get; set; }
 	}
 
-	public interface IGameSettingTabViewModel : IDynamicViewModel
+	public interface IGameSettingTabViewModel : IDynamicViewModel, IInstanceInfo, IPackageInfo
 	{
 		public GameCuror GameCuror { get; set; }
 		public bool EnableGamepadDetection { get; set; }

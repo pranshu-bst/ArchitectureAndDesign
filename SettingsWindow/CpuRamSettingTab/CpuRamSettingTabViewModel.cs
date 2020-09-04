@@ -29,8 +29,15 @@ namespace SettingsWindow
 		public bool EnableHighFrameRates { get; set; }
 		public bool DisplayFPS { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void IsRestartNeeded()
 		{
 			throw new NotImplementedException();
 		}

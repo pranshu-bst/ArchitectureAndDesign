@@ -12,7 +12,7 @@ namespace SettingsWindow
 		public bool Desktop { get; set; }
 	}
 
-	public interface INotificationsSettingTabViewModel : IDynamicViewModel
+	public interface INotificationsSettingTabViewModel : IDynamicViewModel, IInstanceInfo
 	{
 		public bool EnableNotificatioMode { get; set; }
 		public bool DoNotShowNotificationModePopup { get; set; }

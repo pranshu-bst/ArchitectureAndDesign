@@ -6,7 +6,7 @@ using Common;
 namespace SettingsWindow
 {
 
-	public interface ICpuAllocationViewModel : IViewModel 
+	public interface ICpuAllocationViewModel : IViewModel
 	{
 		public Allocation Allocation { get; set; }
 		public int Cores { get; set; }
@@ -20,7 +20,7 @@ namespace SettingsWindow
 		public string DisplayText { get; set; }
 	}
 
-	public interface ICpuRamSettingTabViewModel : IDynamicViewModel
+	public interface ICpuRamSettingTabViewModel : IDynamicViewModel,IInstanceInfo, INeedRestart
 	{
 		public ICpuAllocationViewModel SelectedCpuAllocation { get; set; }
 		ObservableCollection<ICpuAllocationViewModel> CpuAllocations { get; set; }

@@ -13,8 +13,15 @@ namespace SettingsWindow
 		public AstcTexture AstcTexture { get; set; }
 		public bool EnableAstcTextureCaching { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void IsRestartNeeded()
 		{
 			throw new NotImplementedException();
 		}

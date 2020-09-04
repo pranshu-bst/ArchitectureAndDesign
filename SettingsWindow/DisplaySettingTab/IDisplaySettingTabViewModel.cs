@@ -11,7 +11,7 @@ namespace SettingsWindow
 		public string CombinedResolution { get; set; }
 	}
 
-	public interface IDisplaySettingTabViewModel : IDynamicViewModel
+	public interface IDisplaySettingTabViewModel : IDynamicViewModel,IInstanceInfo, INeedRestart
 	{
 		public DisplayOrientation DisplayOrientation { get; set; }
 		public IDisplayResolutionViewModel SelectedDisplayResolution { get; set; }

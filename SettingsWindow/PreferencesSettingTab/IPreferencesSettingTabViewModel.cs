@@ -4,7 +4,7 @@ using Common;
 
 namespace SettingsWindow
 {
-	public interface IPreferencesSettingTabViewModel : IDynamicViewModel
+	public interface IPreferencesSettingTabViewModel : IDynamicViewModel, INeedRestart
 	{
 		public IPlateformPreferencesSettingTabViewModel PlateformPreferencesSettingTab { get; set; }
 		public IPerformancePreferencesSettingTabViewModel PerformancePreferencesSettingTab { get; set; }

@@ -5,7 +5,7 @@ using Common;
 
 namespace SettingsWindow
 {
-	public interface IPlateformPreferencesSettingTabViewModel : IDynamicViewModel
+	public interface IPlateformPreferencesSettingTabViewModel : IDynamicViewModel, INeedRestart
 	{
 		public ICodeDescriptionViewModel SelectedLanguage { get; set; }
 		public ObservableCollection<ICodeDescriptionViewModel> Languages { get; set; }

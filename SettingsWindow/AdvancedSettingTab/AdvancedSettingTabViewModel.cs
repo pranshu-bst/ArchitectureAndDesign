@@ -13,8 +13,15 @@ namespace SettingsWindow
 		public string SelectedNetworkProvider { get; set; }
 		public ObservableCollection<string> NetworkProviders { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void IsRestartNeeded()
 		{
 			throw new NotImplementedException();
 		}

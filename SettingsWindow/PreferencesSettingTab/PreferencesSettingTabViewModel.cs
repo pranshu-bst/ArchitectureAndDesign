@@ -18,6 +18,11 @@ namespace SettingsWindow
 			return PreferencesSettingTabs.Any(tab => tab.IsDirty || tab.AreMyChildsDirty());
 		}
 
+		public void IsRestartNeeded()
+		{
+			throw new System.NotImplementedException();
+		}
+
 		public void OnDiscard()
 		{
 			PreferencesSettingTabs.ForEach(tab => tab.OnDiscard());

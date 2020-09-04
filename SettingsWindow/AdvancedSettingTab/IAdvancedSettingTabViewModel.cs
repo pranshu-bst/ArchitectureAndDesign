@@ -4,7 +4,7 @@ using Common;
 
 namespace SettingsWindow
 {
-	public interface IAdvancedSettingTabViewModel : IDynamicViewModel
+	public interface IAdvancedSettingTabViewModel : IDynamicViewModel,IInstanceInfo, INeedRestart
 	{
 		public ABIValue ABIValue { get; set; }
 		public string SelectedDeviceProfile { get; set; }

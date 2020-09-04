@@ -24,6 +24,11 @@ namespace SettingsWindow
 			throw new NotImplementedException();
 		}
 
+		public void IsRestartNeeded()
+		{
+			throw new NotImplementedException();
+		}
+
 		public void OnDiscard()
 		{
 			throw new NotImplementedException();

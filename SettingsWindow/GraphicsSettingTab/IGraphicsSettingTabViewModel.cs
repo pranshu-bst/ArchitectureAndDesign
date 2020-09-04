@@ -2,7 +2,7 @@
 
 namespace SettingsWindow
 {
-	public interface IGraphicsSettingTabViewModel : IDynamicViewModel
+	public interface IGraphicsSettingTabViewModel : IDynamicViewModel,IInstanceInfo, INeedRestart
 	{
 		public GraphicsEngineMode GraphicsEngineMode { get; set; }
 		public GraphicRenderer GraphicRenderer { get; set; }

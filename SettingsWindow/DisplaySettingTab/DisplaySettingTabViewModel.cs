@@ -20,8 +20,15 @@ namespace SettingsWindow
 		public ObservableCollection<IDisplayResolutionViewModel> DisplayResolutions { get; set; }
 		public PixelDensity PixelDensity { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void IsRestartNeeded()
 		{
 			throw new NotImplementedException();
 		}

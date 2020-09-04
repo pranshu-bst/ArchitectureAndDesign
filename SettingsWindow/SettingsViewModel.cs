@@ -23,11 +23,19 @@ namespace SettingsWindow
 		public ICommand Save { get; set; }
 		public ICommand Close { get; set; }
 		public bool IsDirty { get; set; }
-
+		public string AppName { get; set; }
+		public string PackageInfo { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
 		{
 			return SettingTabs.OfType<IDynamicViewModel>().Any(tab => tab.IsDirty || tab.AreMyChildsDirty());
+		}
+
+		public void IsRestartNeeded()
+		{
+			throw new System.NotImplementedException();
 		}
 
 		public void OnDiscard()

@@ -9,5 +9,7 @@ namespace SettingsWindow
 		public ICommand StartCleanup { get; set; }
 		public ICommand RestoreData { get; set; }
 		public ICommand BackupData { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 	}
 }

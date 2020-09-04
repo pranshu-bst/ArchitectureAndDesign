@@ -19,6 +19,8 @@ namespace SettingsWindow
 	{
 		public ObservableCollection<ICategoryShortcutsViewModel> CategoryShortcuts { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
 		{

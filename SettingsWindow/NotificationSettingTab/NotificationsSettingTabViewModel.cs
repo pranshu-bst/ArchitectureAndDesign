@@ -28,6 +28,8 @@ namespace SettingsWindow
 		public bool EnableToastNotifcation { get; set; }
 		public ObservableCollection<IAppNotificationViewModel> AppNotifications { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
 
 		public bool AreMyChildsDirty()
 		{

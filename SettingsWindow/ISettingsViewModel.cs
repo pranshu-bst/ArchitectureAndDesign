@@ -6,7 +6,7 @@ using Common;
 
 namespace SettingsWindow
 {
-	public interface ISettingsViewModel : IDynamicViewModel, IAmDirty
+	public interface ISettingsViewModel : IDynamicViewModel, IAmDirty, INeedRestart, IPackageInfo, IInstanceInfo
 	{
 		public IAboutSettingTabViewModel AboutSettingTab { get; set; }
 		public IAdvancedSettingTabViewModel AdvancedSettingTab { get; set; }

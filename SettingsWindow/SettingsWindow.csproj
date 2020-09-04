@@ -50,7 +50,10 @@
     <Compile Include="Enums.cs" />
     <Compile Include="GameSettingTab\GameSettingTabViewModel.cs" />
     <Compile Include="GraphicsSettingTab\GraphicsSettingTabViewModel.cs" />
+    <Compile Include="INeedRestart.cs" />
+    <Compile Include="IPackageInfo.cs" />
     <Compile Include="ISettingsViewModel.cs" />
+    <Compile Include="IInstanceInfo.cs" />
     <Compile Include="NotificationSettingTab\NotificationsSettingTabViewModel.cs" />
     <Compile Include="PreferencesSettingTab\DebuggingPreferencesSettingTab\DebuggingPreferencesSettingTabViewModel.cs" />
     <Compile Include="PreferencesSettingTab\DebuggingPreferencesSettingTab\IDebuggingPreferencesSettingTabViewModel.cs" />

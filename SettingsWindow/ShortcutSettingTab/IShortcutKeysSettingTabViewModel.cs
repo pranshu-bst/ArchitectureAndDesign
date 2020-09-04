@@ -14,7 +14,7 @@ namespace SettingsWindow
 		public string Category { get; set; }
 		public ObservableCollection<IShortcutViewModel> Shortcuts { get; set; }
 	}
-	public interface IShortcutKeysSettingTabViewModel : IDynamicViewModel
+	public interface IShortcutKeysSettingTabViewModel : IDynamicViewModel, IInstanceInfo
 	{
 		public ObservableCollection<ICategoryShortcutsViewModel> CategoryShortcuts { get; set; }
 	}

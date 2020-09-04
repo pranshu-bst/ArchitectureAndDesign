@@ -41,6 +41,10 @@ namespace SettingsWindow
 		public ICommand ShowGuide { get; set; }
 		public IGameSettingViewModel GameSeting { get; set; }
 		public bool IsDirty { get; set; }
+		public string VmName { get; set; }
+		public bool IsGuestBooted { get; set; }
+		public string AppName { get; set; }
+		public string PackageInfo { get; set; }
 
 		public bool AreMyChildsDirty()
 		{
