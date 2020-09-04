@@ -4,7 +4,6 @@ using Common;
 
 namespace SettingsWindow
 {
-
 	public interface IDisplayResolutionViewModel: IViewModel {
 		public DisplayOrientation DisplayOrientation { get; set; }
 		public int Height { get; set; }

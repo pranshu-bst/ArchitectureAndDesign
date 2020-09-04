@@ -1,6 +1,6 @@
 ﻿namespace Common
 {
-	public interface ICodeDescriptionViewModel : IViewModel
+	public class CodeDescriptionViewModel : ViewModel, ICodeDescriptionViewModel
 	{
 		public string Code { get; set; }
 		public string Description { get; set; }
